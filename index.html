@@ -44,31 +44,34 @@
     text-align: center;
 }
 
-.trapezoidL {
-    width: 70%;
-    border-bottom: 80px solid orange;
-    border-left: 0px solid transparent;
-    border-right: 20px solid transparent;
-    height: 0;
+.flexbox {
+    display: flex;
+  }
+.flexbox > div {
+    flex: 1;
     text-align: center;
-    line-height: 80px;
-    float: left;
-
+    height: 40px;
+    border: 1px solid #999;
+    background-color: #cfc;
 }
 
-.trapezoidR {
-    width: 70%;
-    border-bottom: 80px solid orange;
-    border-left: 20px solid transparent;
-    border-right: 0px solid transparent;
-    height: 0;
-    text-align: center;
-    line-height: 80px;
-    float: right;
+.boxL {
+    border-top-right-radius: 20px ;
+    border-top-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.boxR {
+    border-top-right-radius: 20px ;
+    border-top-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
 }
 
 .inner{
-    padding-top: 1px;
+    padding: 4px;
+    font-size: 20px;
 }
 
 .container2 {
@@ -107,13 +110,15 @@
                 <p>URLを一つしか持っていないので縦に長いですがご了承ください</p>
                 <p>〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜</p>
             </div>
-            <div class="trapezoidL">
-                <div class = "inner"><a href="#Future_Design">2021.02.14　将来設計</a></div>
-            </div>  
-            <div class="trapezoidR">
-                <div class = "inner"></div><a href="#Interest">2021.02.14　今日知りたいこと</a></div>
+            <div class="flexbox">
+                <div class = "boxL">
+                    <div class = "inner"><a href="#Future_Design">将来設計</a></div>
+                </div>
+                <div class = "boxR">
+                    <div class = "inner"><a href="#Interest">今日知りたいこと</a></div>
+                </div>
+
             </div>
-            <div style = "clear:right">
 
         </div>
     </header>
